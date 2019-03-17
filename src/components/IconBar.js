@@ -1,15 +1,17 @@
 import React from 'react'
-import { Icon, Container} from 'semantic-ui-react'
+import { Icon, Container, Responsive} from 'semantic-ui-react'
 
 export default function IconBar(){
     return (
         <div className="icon-bar">
             <Container text textAlign='left'>
-                <Icon size="large" link name="linkedin"/>
-                <Icon size="large" link name="github"/>
-                <Icon size="large" link name="twitter"/>
-                <Icon size="large" link name="mail"/>
-                <Icon size="large" link name="file text"/>
+                <Responsive as={Container}>
+                    <a href="https://www.linkedin.com/in/aphili/" target="_blank"><Icon size="large" link name="linkedin" /></a>
+                    <a href="https://github.com/aphili/" target="_blank"><Icon size="large" link name="github"/></a>
+                    <a href="https://twitter.com/iaphili" target="_blank"><Icon size="large" link name="twitter"/></a>
+                    <a href="mailto:andrew@philippick.com" target="_blank"><Icon size="large" link name="mail"/></a>
+                    <a href="../../public/curriculum-vitae.pdf" target="_blank"><Icon size="large" link name="file text"/></a>
+                </Responsive>
             </Container>
         </div>
     )

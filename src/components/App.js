@@ -43,6 +43,7 @@ export default class App extends Component {
           <div className="animation">
             <Main/>
             <IconBar/>
+            <br/>
             <Footer/>
           </div>
         </Transition>
