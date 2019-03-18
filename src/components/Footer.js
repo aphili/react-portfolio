@@ -8,7 +8,7 @@ export default function Footer(){
             <br/>
             <Container text>
                 <Responsive as={Container}>
-                    <p>© Andrew Philippick. All rights reserved.</p>
+                    <p className ="text-copyright">© Andrew Philippick. All rights reserved.</p>
                 </Responsive>
             </Container>
         </div>

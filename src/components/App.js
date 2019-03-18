@@ -31,12 +31,6 @@ export default class App extends Component {
 
   render() {
        
-    const getWidth = () => {
-      const isSSR = typeof window === 'undefined'
-    
-      return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
-    }
-    
     const myLoader = (
         <Dimmer active style={{background:'rgb(79, 79, 79)'}}>
           <Loader size='large'/>
@@ -48,7 +42,7 @@ export default class App extends Component {
         {this.state.isLoading && myLoader}
         <Transition visible={this.state.isVisible} animation="fade up" duration={900}>
           <div className="animation">
-            <Main width={getWidth}/>
+            <Main/>
             <IconBar/>
             <Footer/>
           </div>

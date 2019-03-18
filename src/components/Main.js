@@ -8,8 +8,8 @@ export default function Main(props){
             <Container  text  textAlign='left'>
                 <Responsive as={Container} getWidth={props.width}>                
                     <Header size="large">Hi, I'm <strong>Andrew Philippick</strong>, engineering student specialized in <strong>Data Analysis</strong>, and entrepreneur in the making.</Header>
-                    <p>I'm currently living in Paris, and actively looking for an end-of-study internship.</p>
-                    <hr/>
+                    <p id="small-description">I'm currently living in Paris, and actively looking for an end-of-study internship.</p>
+                    <hr style={{marginRight:'2.5em'}}/>
                 </Responsive>
             </Container>
         </div>

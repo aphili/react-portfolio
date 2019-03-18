@@ -1,9 +1,53 @@
 .App {
   text-align: center;
   color: #FFF;
-  height: 100%;
+  margin-top: 28vh;
+  margin-bottom:0px;
+
 }
 
 .ui.header{
   color: #FFF !important;
+}
+
+.ui.large.header{
+  font-size: 2.3em !important;
+}
+
+a{
+  color:#6FE3E3 !important;
+  margin-right: 2em;
+}
+
+strong{
+  color:#6FE3E3 !important;
+}
+
+.main-content{
+  margin-bottom: 1.5em;
+}
+
+.text-copyright, p#small-description{
+  font-size:1.2em;
+}
+
+.copyright{
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 640px) {
+  a{
+    color:#6FE3E3 !important;
+    margin-right: 1em;
+    
+  }
+
+  .ui.large.header{
+    font-size: 1.6em !important;
+  }
+
+  .text-copyright, p#small-description{
+    font-size:1em;
+  }
+  
 }

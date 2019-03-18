@@ -13,23 +13,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-a{
-  color:#6FE3E3 !important;
-  margin-right: 4%;
-}
-
-strong{
-  color:#6FE3E3 !important;
-}
-
-.main-content{
-  margin-bottom: 1.5em;
-  margin-Bottom: 0;
-  margin-Top: 10em;
-  font-size: 1.1em !important;
-}
-
-.copyright{
-  margin-top: 2em;
-}
