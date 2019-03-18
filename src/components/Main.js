@@ -1,17 +1,15 @@
 import React from 'react'
 import { Container, Divider, Header, Responsive } from 'semantic-ui-react'
 
-export default function Main(){
-
-    let description = "Hi, I'm Andrew Philippick, engineering student specialized in Business Intelligence, and entrepreneur in the making."
+export default function Main(props){
     
     return (
         <div className="main-content">
-            <Container  text  textAlign='left' style={{marginBottom: 0,marginTop: '10em'}}>
-                <Responsive as={Container}>                
-                    <Header size="large">{description}</Header>
+            <Container  text  textAlign='left'>
+                <Responsive as={Container} getWidth={props.width}>                
+                    <Header size="large">Hi, I'm <strong>Andrew Philippick</strong>, engineering student specialized in <strong>Data Analysis</strong>, and entrepreneur in the making.</Header>
                     <p>I'm currently living in Paris, and actively looking for an end-of-study internship.</p>
-                    <Divider/>
+                    <hr/>
                 </Responsive>
             </Container>
         </div>

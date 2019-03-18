@@ -4,7 +4,8 @@ import {Container, Responsive} from 'semantic-ui-react'
 export default function Footer(){
 
     return(
-        <div className="footer">
+        <div className="copyright">
+            <br/>
             <Container text>
                 <Responsive as={Container}>
                     <p>© Andrew Philippick. All rights reserved.</p>

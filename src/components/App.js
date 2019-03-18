@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Dimmer, Loader, Transition} from 'semantic-ui-react'
+import {Dimmer, Loader, Transition, Responsive} from 'semantic-ui-react'
 
 import '../css/App.css';
 import 'semantic-ui-css/semantic.min.css'
@@ -27,9 +27,16 @@ export default class App extends Component {
     }, 900)
   }
   
+  
 
   render() {
        
+    const getWidth = () => {
+      const isSSR = typeof window === 'undefined'
+    
+      return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
+    }
+    
     const myLoader = (
         <Dimmer active style={{background:'rgb(79, 79, 79)'}}>
           <Loader size='large'/>
@@ -41,9 +48,8 @@ export default class App extends Component {
         {this.state.isLoading && myLoader}
         <Transition visible={this.state.isVisible} animation="fade up" duration={900}>
           <div className="animation">
-            <Main/>
+            <Main width={getWidth}/>
             <IconBar/>
-            <br/>
             <Footer/>
           </div>
         </Transition>

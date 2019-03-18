@@ -4,9 +4,10 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow:hidden;
+  height:100%;
+  width:100%;
+  overflow: hidden;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -14,5 +15,21 @@ code {
 }
 
 a{
-  color:#FFF !important;
+  color:#6FE3E3 !important;
+  margin-right: 4%;
+}
+
+strong{
+  color:#6FE3E3 !important;
+}
+
+.main-content{
+  margin-bottom: 1.5em;
+  margin-Bottom: 0;
+  margin-Top: 10em;
+  font-size: 1.1em !important;
+}
+
+.copyright{
+  margin-top: 2em;
 }
