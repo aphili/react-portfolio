@@ -10,7 +10,7 @@
 }
 
 .ui.large.header{
-  font-size: 2.1em !important;
+  font-size: 2.2em !important;
 }
 
 a{
@@ -24,11 +24,11 @@ strong{
 }
 
 .main-content{
-  margin-bottom: 1.5em;
+  margin-bottom: 1.4em;
 }
 
 .text-copyright, p#small-description{
-  font-size:1.2em;
+  font-size:1.4em;
 }
 
 .copyright{
@@ -56,7 +56,7 @@ strong{
   }
 
   .text-copyright, p#small-description{
-    font-size:1em;
+    font-size:1em !important;
   }
   
 }
