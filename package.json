@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
@@ -11,7 +12,7 @@
     "set-default-browser": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=chromium react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

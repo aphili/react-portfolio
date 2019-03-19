@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {Dimmer, Loader, Transition, Responsive} from 'semantic-ui-react'
+import {Dimmer, Loader, Transition} from 'semantic-ui-react'
 
 import '../css/App.css';
-import 'semantic-ui-css/semantic.min.css'
 
 import Main from './Main'
 import IconBar from './IconBar'

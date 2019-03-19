@@ -3,7 +3,6 @@
   color: #FFF;
   margin-top: 28vh;
   margin-bottom:0px;
-
 }
 
 .ui.header{
@@ -11,13 +10,14 @@
 }
 
 .ui.large.header{
-  font-size: 2.3em !important;
+  font-size: 2.1em !important;
 }
 
 a{
   color:#6FE3E3 !important;
   margin-right: 2em;
 }
+
 
 strong{
   color:#6FE3E3 !important;
@@ -36,6 +36,15 @@ strong{
 }
 
 @media screen and (max-width: 640px) {
+
+  
+  .App {
+    text-align: center;
+    color: #FFF;
+    margin-top: 18vh;
+    margin-bottom:0px;
+  }
+
   a{
     color:#6FE3E3 !important;
     margin-right: 1em;
