@@ -23,7 +23,7 @@ export default class App extends Component {
           isLoading:false,
           isVisible:true
         })
-    }, 900)
+    }, 1000)
   }
   
   
@@ -31,8 +31,8 @@ export default class App extends Component {
   render() {
        
     const myLoader = (
-        <Dimmer active style={{background:'rgb(79, 79, 79)'}}>
-          <Loader size='large'/>
+        <Dimmer active style={{background:'rgb(79, 79, 79', color:'#6FE3E3'}}>
+          <Loader size='large' content="welcome"/>
         </Dimmer>
     )
     
