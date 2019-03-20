@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {Dimmer, Loader, Transition} from 'semantic-ui-react'
 
 import '../css/App.css';
 
 import Main from './Main'
-import IconBar from './IconBar'
-import Footer from './Footer'
+import Login from './Login'
 
 export default class App extends Component {
 
@@ -13,7 +13,8 @@ export default class App extends Component {
     super()
     this.state = {
       isLoading:true,
-      isVisible:false
+      isVisible:false,
+      isRedirect:true
     }
   }
 
@@ -26,8 +27,6 @@ export default class App extends Component {
     }, 1000)
   }
   
-  
-
   render() {
        
     const myLoader = (
@@ -36,16 +35,18 @@ export default class App extends Component {
         </Dimmer>
     )
     
+
     return (
       <div className="App">
+        {/* <Login/> */}
         {this.state.isLoading && myLoader}
-        <Transition visible={this.state.isVisible} animation="fade up" duration={900}>
-          <div className="animation">
-            <Main/>
-            <IconBar/>
-            <Footer/>
-          </div>
-        </Transition>
+        <Main visible = {this.state.isVisible}/>
+
+        {/* <Router>
+          <Route  render={()=>(
+            this.state.isRedirect ? (<Login/>) : (<Main visible = {this.state.isVisible}/>)
+          )}/>
+        </Router> */}
       </div>
     );
   }

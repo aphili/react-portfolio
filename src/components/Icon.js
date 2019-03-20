@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon, Container, Responsive} from 'semantic-ui-react'
 
-export default function IconBar(){
+export default function Icons(){
     return (
         <div className="icon-bar">
             <Container text textAlign='left'>
